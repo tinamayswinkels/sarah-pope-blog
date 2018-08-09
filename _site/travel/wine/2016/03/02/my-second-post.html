@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <head>
+
+
   <!-- This is the head of your html, add content here just like you would normally add it to the head. -->
 
 <!-- Meta Data -->
@@ -65,57 +67,23 @@
 
 <body>
 
-<div class="pure-container" data-effect="pure-effect-slide">
-
-  <!-- this is the icon and controls for the hamburger menu -->
-  <input type="checkbox" id="pure-toggle-right" class="pure-toggle" data-toggle="right">
-  <label class="pure-toggle-label mob-show" for="pure-toggle-right" data-toggle-label="right">
-    <span class="pure-toggle-icon"></span>
-  </label>
-
-  <!-- This contains the hamburger menu when it's popped out-->
-  <div class="pure-drawer" data-position="right">
-
-    <h2> LOGO </h2>
-
-<nav class="mob-nav">
-  <a href="/index"> Home </a>
-  <a href="/about"> About </a>
-  <a href="/blog"> Blog </a>
-  <a href="/shop"> Shop </a>
-</nav>
-
-<hr> <!-- this is a horizontal rule, aka line -->
-
-<nav class="social-nav">
-  <!-- add your social links here -->
-  <a href="#"> <i class="fa fa-facebook"></i> </a>
-  <a href="#"> <i class="fa fa-instagram"></i> </a>
-  <a href="#"> <i class="fa fa-twitter"></i> </a>
-</nav>
-
-
-  </div>
-
-  <div class="pure-pusher-container">
-      <div class="pure-pusher"> <!-- this contains all of the body of the site -->
-
-        <header class="grid-middle">
+<header class="grid-middle">
   <div class="col-6_sm-12">
     <img class="logo" src="/images/demo-logo.png" alt="Brand Name Here">
   </div>
   <div class="col-6_sm-12 mob-hide">
     <nav class="right">
-      <a href="/index"> Home </a>
       <a href="/about"> About </a>
+      <a href="/work"> Work </a>
+      <a href="/services"> Services </a>
       <a href="/blog"> Blog </a>
-      <a href="/shop"> Shop </a>
+      <a href="/contact"> Contact </a>
     </nav>
   </div>
 </header>
 
 
-        <section class="tall grid">
+<section class="tall grid">
 
   <div class="col-8_sm-12 post-body">
       <h1> Second Blog Post </h1>
@@ -125,56 +93,59 @@
       <p>Ad quo animal legimus legendos. Ut eum veniam dicunt virtute, an noster voluptua convenire mei. At sed tollit scaevola, an maiorum repudiare per. Mei epicuri apeirian ne, usu iisque aliquam praesent ad, omnes ullamcorper in pri. Vitae quaeque mea cu. Mei quot laoreet laboramus eu, cu propriae patrioque maiestatis vel.</p>
 
 
-      <hr>
 
       <div class="social-share">
-        <h4> Did you <i class="fa fa-heart featured"></i> this? Share it on ... </h4>
-        <nav>
-            <a href="https://twitter.com/intent/tweet?text=Second Blog Post&url=http://localhost:4000/travel/wine/2016/03/02/my-second-post.html&via=yournamehere&related=yournamehere" rel="nofollow" target="_blank" title="Share on Twitter">
-                <i class="fa fa-twitter"></i>Twitter
-            </a>
-            <a href="https://facebook.com/sharer.php?u=http://localhost:4000/travel/wine/2016/03/02/my-second-post.html" rel="nofollow" target="_blank" title="Share on Facebook">
-                <i class="fa fa-facebook"></i>Facebook
-            </a>
-            <a href="https://plus.google.com/share?url=http://localhost:4000/travel/wine/2016/03/02/my-second-post.html" rel="nofollow" target="_blank" title="Share on Google+">
-              <i class="fa fa-google-plus"></i>Google +
-            </a>
-        </nav>
-      </div>
+  <h4> Did you <i class="fa fa-heart"></i> this? Share it on ... </h4>
+  <nav>
+      <a href="https://twitter.com/intent/tweet?text=Second Blog Post&url=http://localhost:4000/travel/wine/2016/03/02/my-second-post.html&via=yournamehere&related=yournamehere" rel="nofollow" target="_blank" title="Share on Twitter">
+          <i class="fa fa-twitter"></i>Twitter
+      </a>
+      <a href="https://facebook.com/sharer.php?u=http://localhost:4000/travel/wine/2016/03/02/my-second-post.html" rel="nofollow" target="_blank" title="Share on Facebook">
+          <i class="fa fa-facebook"></i>Facebook
+      </a>
+      <a href="https://plus.google.com/share?url=http://localhost:4000/travel/wine/2016/03/02/my-second-post.html" rel="nofollow" target="_blank" title="Share on Google+">
+        <i class="fa fa-google-plus"></i>Google +
+      </a>
+  </nav>
+</div>
+
 
   </div>
 
   <div class="col-4_sm-12 mob-hide sidebar">
-      <div>
-        <h3> This is a sidebar box </h3>
-        <p> You can edit the content of the sidebar box in your post layout. </p>
-        <img src="/images/yoga-1.jpg">
-      </div>
-      <div>
-        <p> You could put anything you want in here, like links to your social or featured articles, a newsletter signup, etc </p>
-      </div>
 
-        <h3> Categories </h3>
+    <div>
+  <img src="/images/sarah.jpg">
+  <h3>Hi, I'm Sarah Pope </h3>
+  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+</div>
 
-        <!-- this will output all categories on your site -->
-        
-          <a href="/category/travel" class="category"> travel </a>
-        
-          <a href="/category/wine" class="category"> wine </a>
-        
-          <a href="/category/food" class="category"> food </a>
-        
+<div>
+  <p> You could put anything you want in here, like links to your social or featured articles, a newsletter signup, etc </p>
+</div>
 
-      </div>
+<div>
+
+  <h3> Categories </h3>
+
+  <!-- this will output a list of all the categories on your site -->
+  
+    <a href="/category/travel" class="category"> travel </a>
+  
+    <a href="/category/wine" class="category"> wine </a>
+  
+    <a href="/category/food" class="category"> food </a>
+  
+
+</div>
+
+
+  </div>
   </div>
 </section>
-<section class="no-padding">
-  <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/2f73d0c0268851b9adf833b29686c0c0.html" id="lightwidget_2f73d0c026" name="lightwidget_2f73d0c026"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-</section>
 
 
-
-        <footer class="grid">
+<footer class="grid">
 
   <!-- Column 1 -->
   <div class="col-6_sm-12">
@@ -185,10 +156,11 @@
   <!-- Column 2 -->
   <div class="col-3_sm-6_xs-12">
     <nav>
-      <a href="/index"> Home </a>
       <a href="/about"> About </a>
+      <a href="/work"> Work </a>
+      <a href="/services"> Services </a>
       <a href="/blog"> Blog </a>
-      <a href="/shop"> Shop </a>
+      <a href="/contact"> Contact </a>
     </nav>
   </div>
 
@@ -205,13 +177,6 @@
 </footer>
 
 
-      </div> <!-- end pure-pusher -->
-  </div> <!-- end pure pusher container -->
-
-  <!-- this is the overlay when you are viewing the mobile nav -->
-  <label class="pure-overlay" for="pure-toggle-right" data-overlay="right"></label>
-</div> <!-- end of page, nothing except body scipts should be below this -->
-
 <!-- These are the scripts that will be placed just before the closing body tag on every page. -->
 
 <!-- jQuery -->
@@ -222,5 +187,6 @@
 
 <!-- This is your file with custom javascript or jquery -->
 <script src="/js/main.js"></script>
+
 
 </body>

@@ -5,7 +5,7 @@ collections:
     output: true
 
 # This is the configuration for the pagination plugin.
-paginate: 2
+paginate: 10
 paginate_path: "/archive/page:num/"
 
 # This is the configuration for the Jekyll-archives plugin.

@@ -1,0 +1,15 @@
+
+  <!-- this is the icon and controls for the hamburger menu -->
+  <input type="checkbox" id="pure-toggle-right" class="pure-toggle" data-toggle="right">
+  <label class="pure-toggle-label mob-show" for="pure-toggle-right" data-toggle-label="right">
+    <span class="pure-toggle-icon"></span>
+  </label>
+
+  <!-- this is the overlay when you are viewing the mobile nav -->
+  <label class="pure-overlay" for="pure-toggle-right" data-overlay="right"></label>
+</div> <!-- end of page, nothing except body scipts should be below this -->
+
+  <!-- This contains the hamburger menu when it's popped out-->
+  <div class="pure-drawer" data-position="right">
+    {% include hamburger-nav.html %}
+  </div>

@@ -1,0 +1,20 @@
+<div>
+  <img src="/images/sarah.jpg">
+  <h3>Hi, I'm Sarah Pope </h3>
+  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+</div>
+
+<div>
+  <p> You could put anything you want in here, like links to your social or featured articles, a newsletter signup, etc </p>
+</div>
+
+<div>
+
+  <h3> Categories </h3>
+
+  <!-- this will output a list of all the categories on your site -->
+  {% for category in site.categories %}
+    <a href="/category/{{category | first }}" class="category"> {{category | first}} </a>
+  {% endfor %}
+
+</div>
