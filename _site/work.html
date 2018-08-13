@@ -25,7 +25,7 @@
     <meta property="og:image" content="">
     <meta property="og:url" content="/work.html">
     <meta name="twitter:card" content="">
-    <meta name="og:site_name" content="<!-- ADD SITE NAME HERE -->">
+    <meta name="og:site_name" content="Sarah Overshares">
 
 <!-- end of meta tags -->
 
@@ -40,18 +40,11 @@
     <!-- Gridlex for a simple flexbox grid -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gridlex/2.2.4/gridlex.min.css">
 
-    <!-- Pure Drawer for hamburger menu -->
-    <link rel="stylesheet" href="/css/pure-drawer.css">
-
-    <!-- Snipcart theme -->
-    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
-
     <!-- visit http://realfavicongenerator.net to generate favicons for your site and then place them in the /images/favicons folder -->
 
 
     <!-- CUSTOM STYLESHEETS - This should always be the last stylesheet in your head -->
     <link rel="stylesheet" href="/css/main.css">
-      <link rel="stylesheet" href="/css/specific.css">
 
 <!-- end stylesheets -->
 
@@ -82,16 +75,29 @@
   </div>
 </header>
 
+<!-- Mobile Nav -->
 
-<!-- FIRST BANNER SECTION ---->
-<section id="intro-banner" class="banner centered grid-middle-center">
-  <div class="col-8_sm-12">
-    <p class="big-emphasis">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>- Client Name  </p>
+<div class="mobile-menu-button">
+    <i class="fa fa-bars"></i>
+    <i class="fa fa-times"></i> <!-- this only appears on when the nav is open -->
 </div>
-</section>
+
+<nav class="mobile-nav">
+  <a href="/index"> Home </a>
+  <a href="/about"> About </a>
+  <a href="/blog"> Blog </a>
+  <a href="/shop"> Shop </a>
+</nav>
+
+
 
 <section class="grid-center">
+  <div class="col-9">
+    <p class="emphasis">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+  </div>
+  <div class="col-3">
+    <!-- empty filler -->
+  </div>
   <div class="col-5_sm-12 centered">
     <div class="work-testimonial">
       <p class="big-emphasis">“ A dream to work with, hire Sarah for your next project if you don’t want it to suck. ” </p>

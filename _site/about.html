@@ -8,8 +8,8 @@
 <meta charset="utf-8">
 
     <!-- Meta data for SEO purposes. -->
-    <title>  </title>
-    <meta name="description" content="">
+    <title> IOC Starter Theme </title>
+    <meta name="description" content="This is a starter blog + ecommerce template to fastrack your projects.">
     <meta name="keywords" content="">
 
     <!-- meta data to tell the browser that your devide is responsive -->
@@ -20,12 +20,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
     <!--  Social media sharing META Tags -->
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
+    <meta property="og:title" content="IOC Starter Theme">
+    <meta property="og:description" content="This is a starter blog + ecommerce template to fastrack your projects.">
+    <meta property="og:image" content="/images/sarah.jpg">
     <meta property="og:url" content="/about.html">
-    <meta name="twitter:card" content="">
-    <meta name="og:site_name" content="<!-- ADD SITE NAME HERE -->">
+    <meta name="twitter:card" content="This is a starter blog + ecommerce template to fastrack your projects.">
+    <meta name="og:site_name" content="Sarah Overshares">
 
 <!-- end of meta tags -->
 
@@ -40,18 +40,11 @@
     <!-- Gridlex for a simple flexbox grid -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gridlex/2.2.4/gridlex.min.css">
 
-    <!-- Pure Drawer for hamburger menu -->
-    <link rel="stylesheet" href="/css/pure-drawer.css">
-
-    <!-- Snipcart theme -->
-    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
-
     <!-- visit http://realfavicongenerator.net to generate favicons for your site and then place them in the /images/favicons folder -->
 
 
     <!-- CUSTOM STYLESHEETS - This should always be the last stylesheet in your head -->
     <link rel="stylesheet" href="/css/main.css">
-      <link rel="stylesheet" href="/css/specific.css">
 
 <!-- end stylesheets -->
 
@@ -82,33 +75,52 @@
   </div>
 </header>
 
+<!-- Mobile Nav -->
+
+<div class="mobile-menu-button">
+    <i class="fa fa-bars"></i>
+    <i class="fa fa-times"></i> <!-- this only appears on when the nav is open -->
+</div>
+
+<nav class="mobile-nav">
+  <a href="/index"> Home </a>
+  <a href="/about"> About </a>
+  <a href="/blog"> Blog </a>
+  <a href="/shop"> Shop </a>
+</nav>
+
+
 
 <!-- FIRST BANNER SECTION ---->
 <section id="intro-banner" class="banner centered grid-middle-center">
   <div class="col-8_sm-12">
-    <p class="big-emphasis">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>- Client Name  </p>
+    <p class="big-emphasis editable">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p class="editable">- Client Name  </p>
 </div>
 </section>
 
 <section class="grid-center centered">
-  <div class="col-8_sm-12">
+  <div class="col-8_sm-12 editable">
     <h2> About Sarah Overshares </h2>
     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
     <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
   </div>
   <div class="col-6_sm-12">
-    <img src="/images/sarah.jpg" />
+    <img src="/images/sarah.jpg" class="editable">
   </div>
-  <div class="col-6_sm-12-middle">
+  <div class="col-6_sm-12-middle editable">
     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
     <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
   </div>
-  <div class="col-8_sm-12">
+  <div class="col-8_sm-12 editable">
     <p> Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
     <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
   </div>
 
+</section>
+<section>
+   <h2 class="editable"> Let's make some magic</h2>
+   <a href="/contact" class="button editable"> Contact Me </a>
 </section>
 
 

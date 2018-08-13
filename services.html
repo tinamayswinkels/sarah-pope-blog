@@ -2,83 +2,62 @@
 layout: default
 title: Services | Sarah Pope
 meta-description: This is a starter blog + ecommerce template to fastrack your projects.
-featured-image_path: /uploads/pr-photos-6472.jpg
+meta-keywords:
+featured-image_path: /images/sarah.jpg
 ---
-
-  <!-- FIRST BANNER SECTION ---->
-  <section id="intro-banner" class="banner centered grid-middle-center">
-    <div class="col-8_sm-12">
-      <p class="big-emphasis">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>- Client Name  </p>
-  </div>
-  </section>
 
 <!-- SECOND CTA SECTION ---->
   <section class="centered">
-    <div class="capped-width">
+    <div class="capped-width editable">
         <h2> A Creative Writer </h2>
         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
         <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-        <div class="grid-middle media-logos">
-          <div class="col-3_sm-6">
-            <img src="/images/logo.png" />
-          </div>
-          <div class="col-3_sm-6">
-            <img src="/images/logo.png" />
-          </div>
-          <div class="col-3_sm-6">
-            <img src="/images/logo.png" />
-          </div>
-          <div class="col-3_sm-6">
-            <img src="/images/logo.png" />
-          </div>
-        </div>
     </div>
   </section>
 
   <!-- Second BANNER SECTION ---->
   <section class="banner centered grid-middle-center" style="background-image:url('/images/placeholder.jpg')">
     <div class="col-6_md-9_sm-12">
-      <p class="big-emphasis">“ What a dream to work with. Definitely hire Sarah for your next project if you don’t want it to suck. ” </p>
-      <p>- Client Name  </p>
+      <p class="big-emphasis editable">“ What a dream to work with. Definitely hire Sarah for your next project if you don’t want it to suck. ” </p>
+      <p class="editable">- Client Name  </p>
   </div>
   </section>
 
 <!-- THIRD ICON GRID SECTION ---->
   <section>
-    <h2 class="centered"> Services I offer </h2>
+    <h2 class="centered editable"> Services I offer </h2>
     <div class="grid">
-      <div class="col-4_sm-12">
+      <div class="col-4_sm-12 editable">
 
         <h3> Heading </h3>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
       </div>
 
-      <div class="col-4_sm-12">
+      <div class="col-4_sm-12 editable">
 
         <h3> Heading </h3>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
       </div>
 
-      <div class="col-4_sm-12">
+      <div class="col-4_sm-12 editable">
 
         <h3> Heading </h3>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
       </div>
 
-      <div class="col-4_sm-12">
+      <div class="col-4_sm-12 editable">
 
         <h3> Heading </h3>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
       </div>
 
-      <div class="col-4_sm-12">
+      <div class="col-4_sm-12 editable">
 
         <h3> Heading </h3>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
       </div>
 
-      <div class="col-4_sm-12">
+      <div class="col-4_sm-12 editable">
 
         <h3> Heading </h3>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
@@ -86,29 +65,7 @@ featured-image_path: /uploads/pr-photos-6472.jpg
     </div> <!-- end of grid -->
 </section>
 
-<!-- Second BANNER SECTION ---->
-<section class="banner centered grid-middle-center" style="background-image:url('/images/placeholder.jpg')">
-  <div class="col-6_md-9_sm-12">
-    <p class="big-emphasis">“ What a dream to work with. Definitely hire Sarah for your next project if you don’t want it to suck. ” </p>
-    <p>- Client Name  </p>
-</div>
-</section>
-
-<section class="container">
-  <h2 class="centered"> Latest on the blog </h2>
-
-  <div class="grid blog-loop">
-    {% for post in site.posts limit:3 %}
-      <div class="col-4_sm-12">
-          <a href="{{post.url}}">
-            <div class="post-image-vertical" style="background-image:url('{{post.image_path}}');"></div>
-            <h4> {{post.title}} </h4>
-          </a>
-        </div>
-      {% endfor %}
-  </div>
-  <div class="centered">
-    <!-- This links to the archive of blog posts -->
-    <a href="/archive" class="button"> See More </a>
-  </div>
+<section class="centered light">
+   <h2 class="editable"> Let's make some magic</h2>
+   <a href="/contact" class="button editable"> Contact Me </a>
 </section>

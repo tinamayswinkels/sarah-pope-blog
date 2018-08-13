@@ -80,6 +80,10 @@ li  { font-size: 1.1rem; }
   font-size: 2rem;
 }
 
+.emphasis {
+  font-size: 1.4rem;
+}
+
 a {
   color: inherit;
 }
@@ -134,10 +138,15 @@ nav a {
     color: inherit;
 }
 nav a:hover {
-  color: #1abc9c; /* featured color */
+  color: #de541e; /* featured color */
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+
+nav a.cc-active {
+  border-bottom: 1px solid;
+}
+
 .logo {
   max-height: 4.5rem;
   max-width: 20rem;
@@ -158,14 +167,66 @@ footer nav .fa,
   padding: 0 1em 0 0;
 }
 
-.pure-drawer { /* pop-out hamburger menu */
-  padding: 5em 3%;
+/* -- Mobile Nav -- */
+
+/* Mobile Nav */
+.mobile-nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(60,60,65,0.95);
+    color: white;
+    padding: 5% 10%;
+    z-index: 999;
 }
 
-.mob-nav a {
-  display: block;
-  padding: 0.5em;
+.mobile-nav a {
+  display      : block;
+  padding: 0.5rem;
+  font-size: 7vh;
 }
+
+.mobile-nav .social-icon {
+  display: inline-block;
+}
+
+.mobile-menu-button {
+  padding: 1rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  display: none;
+  z-index: 9999;
+}
+
+.mobile-menu-button .fa {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.mobile-menu-button.nav-open .fa-bars {
+  display:none;
+}
+.mobile-menu-button .fa-times {
+  display:none;
+}
+
+.mobile-menu-button.always-on {
+    display: block;
+    border: 2px solid white;
+    color: #f0f0f0;
+}
+
+.mobile-menu-button.nav-open .fa-times {
+  color: white;
+  display:block;
+}
+
 
 /* ----- MODULAR ELEMENTS --------------------------- */
 .banner {
@@ -202,7 +263,8 @@ footer nav .fa,
 }
 .button:hover,
 .button-inverted:hover {
-  font-weight: semi-bold;
+  border-color: #de541e;
+  color: #de541e;
 }
 
 /* Shop Elements */
@@ -363,6 +425,10 @@ form [class*=col-] {
       display: none!important;
   }
   .mob-show {
+    display: block;
+  }
+
+  .mobile-menu-button {
     display: block;
   }
 
