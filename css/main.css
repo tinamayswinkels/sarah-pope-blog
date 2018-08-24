@@ -236,10 +236,12 @@ footer nav .fa,
   min-height:80vh;
 }
 
-.bg-image { /* This can be used for any col or div that you want filled with a background image. */
-  background-color: #ededef;
+.box-img { /* This can be used for any col or div that you want filled with a background image. */
+  background-color: grey; /* this is a fallback incase the image doesn't load */
+  background-image: url('/images/yoga-1.jpg'); /* if you are adding a unique image to every one you can remove this */
   background-size: cover;
   background-position: center;
+  min-height: 20vh;
 }
 
 /* Buttons */
@@ -413,69 +415,6 @@ form [class*=col-] {
 #intro-banner {
   background-image: url('/images/placeholder.jpg'); /* This is just an axample */
 }
-
-/* Online Course Purchase Options */
-
-.padded-boxes > div {
-  border: 1rem solid white;
-  margin-bottom: 3rem;
-  padding: 1rem;
-}
-
-.buy-box {
-  background-color: white;
-  margin: 0 1rem;
-  border-radius: 3px;
-  padding:0;
-  position: relative;
-  padding-bottom: 4rem;
-  background-color: rgb(240,240,240);
-}
-
-.buy-box-intro h3 {
-  color: white;
-  background-color: teal;
-  padding: 1rem;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-.buy-box-intro h3 span {
-  color: white;
-  display: block;
-  font-weight: lighter;
-  padding-bottom: 0.5rem;
-}
-
-.buy-box-content {
-  padding: 1rem 2rem;
-}
-
-.buy-box-content .price {
-  font-size: 3rem;
-  margin-top: 1rem;
-  margin-bottom: 0;
-}
-
-.buy-box-content hr {
-  border: 1px solid #78787d;
-  margin: 2rem auto;
-}
-
-.buy-box-content .subtitle {
-  margin-bottom: 2rem;
-}
-
-.buy-box-footer {
-  padding:1rem;
-  width:100%;
-  display:block;
-  position: absolute;
-  bottom:0;
-  color: white;
-  text-transform: uppercase;
-  background-color: rgb(90,90,95);
-}
-
 
 /*------- Media Queries ------------------------*/
 @media(max-width:800px) {
